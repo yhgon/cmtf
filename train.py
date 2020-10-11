@@ -1,5 +1,5 @@
-from compressive_transformer_pytorch import CompressiveTransformer
-from compressive_transformer_pytorch.autoregressive_wrapper import AutoregressiveWrapper
+from cmtf import CompressiveTransformer
+from cmtf_ar_wrapper import AutoregressiveWrapper
 
 import random
 import tqdm
