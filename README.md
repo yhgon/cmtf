@@ -29,4 +29,33 @@ $sh scripts/download_enwiki8.sh
  $python train.py
  ```
 
+## configuration 
+- train params 
+ - optimizer : Adam
+ - learning rate schedule : linear warmup from 1e-6 to 3e-4
+  - for Char : 4000 warmup steps with 100,1000 decay steps
+  - for Word : 16,000 warmup steps with 500,000 decay steps
+- model params (large)
+ - layers 24 
+ - d_model 1024 
+ - n_head 8
+ - d_head 128
+ - d_inner 3072  
+ - seq win size : 768 
+ - training memory size : 768
+ - training compressive memrory size :  1152
+ - compression rate : 3
+ - evaluation memory size : 3072  
  
+- model params (base from transformer-XL)
+ - layers 12 
+ - d_model 512
+ - n_head 8
+ - d_head 64
+ - d_inner 2048
+ - seq win size : 512 
+ - training memory size : 512
+ - training compressive memrory size :  1024
+ - compression rate : 3
+ - evaluation memory size : 2100 
+
