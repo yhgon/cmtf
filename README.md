@@ -1,8 +1,10 @@
-<img src="./memory.png"></img>
+
 
 ## Compressive Transformer in Pytorch
 
-Pytorch implementation of <a href="https://openreview.net/forum?id=SylKikSYDH">Compressive Transformers</a>, a variant of Transformer-XL with compressed memory for long-range language modelling. I will also combine this with an idea from <a href="https://arxiv.org/abs/1910.06764">another paper</a> that adds gating at the residual intersection. The memory and the gating may be synergistic, and lead to further improvements in both language modeling as well as reinforcement learning.
+Pytorch implementation of DeepMinds' <a href="https://arxiv.org/abs/1911.05507">Compressive Transformers</a>, an attentive sequence model which compresses past memories for long-range sequence learning. It's variant of <a href="https://arxiv.org/abs/1901.02860"> Transformer-XL</a> The Compressive Transformer obtains state-of-the-art language modelling results in the WikiText-103 and Enwik8 benchmarks, achieving 17.1 ppl and 0.97 bpc respectively.
+<img src="./memory.png"></img>
+
 
 maintained by Hyungon Ryu 
 
